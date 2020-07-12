@@ -21,10 +21,12 @@
 ;; emacs配置文件夹路径
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "/usr/local/share/emacs/26.3/site-lisp")
+;; load init file
+(require 'init)
 
-(require 'find-file-in-project)
-(load-file "find-file-in-project.el")
-(global-set-key [(C-N)] 'find-file-in-project)
+;; (require 'find-file-in-project)
+;; (load-file "find-file-in-project.el")
+;; (global-set-key [(C-N)] 'find-file-in-project)
 
 ;; ------- display -------
 (setq inhibit-startup-message t)
